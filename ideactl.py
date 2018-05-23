@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-## Author: Adolfo Pérez Álvarez
+## Author: Adolfo Perez Alvarez
 ## Source: https://github.com/adolfopa/dotfiles/blob/master/scripts/ideactl.py
 
 from __future__ import print_function
