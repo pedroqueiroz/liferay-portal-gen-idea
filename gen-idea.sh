@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Check if current directory is the liferay-portal project folder
-PORTAL=$HOME/projects/liferay-portal
+PORTAL=$PWD
 
 if [ ! -f $PORTAL/gradlew ]; then
 	echo "$PORTAL is not a valid liferay project folder..."
