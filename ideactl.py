@@ -141,7 +141,7 @@ def module_conf(pfile, fname):
         return ('', '')
 
     parts = itertools.dropwhile(
-        lambda s: s <> 'modules', fname.split('/'))
+        lambda s: s != 'modules', fname.split('/'))
 
     group = '/'.join(list(parts)[1:-2]) or 'monolith'
 
@@ -168,7 +168,7 @@ MODULE_XML_TEMPLATE = (
 
 def dwim(opts):
     def find_file_location(dname, fname, stop_at):
-        while dname <> stop_at:
+        while dname != stop_at:
             path = os.path.join(dname, fname)
 
             if (os.path.exists(path)):
